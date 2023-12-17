@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+     background-color: lightblue;
+ }
+ h1 {
+    text-shadow: 2px 2px 5px burlywood;
+   color:beige;
+ }
+h2 {
+    font-family:fantasy;
+ color:beige;
+ }  
+
+table {
+    width: 80%;
+    border-collapse:unset;
+    margin-top: 20px;
+}
+
+table ,th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+}
+
+a {
+    text-decoration:wavy;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:beige;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}

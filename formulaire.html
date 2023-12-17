@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <style>
+    label {
+    display: block;
+    margin-bottom: 5px;
+}
+</style><link rel="stylesheet" href="formulaire.css">
+
+</head>
+  <body>
+    <header id="mainHeader">
+      <div>
+        <li> <a href="index.html"> l'acceuil </a></li>
+        <li> <a href="formation.html"> les formations </a></li>
+        <li> <a href="experiences.html"> les experiences </a></li>
+        <li> <a href="langue.html"> les langues </a></li>
+      </div>
+      <br />
+      <hr />
+      <br />
+      />
+    </header>
+    <br /><br />
+    <hr />
+    <br /><br />
+    <section id="pageContent">
+      <h3>Formulaire d'emploi</h3>
+      <form action="#" method="get" name="Formulaire d'emploi">
+        <table> 
+          <tr >
+            <td>
+              <label for="lname">Nom <span>*</span></label>
+            </td>
+            <td> 
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                onkeyup="nameValidation()"
+                
+              />
+
+            </td>
+            <td >
+            
+              <p style="color: red" id="nomEr""></p>
+            
+            </td>
+            
+          </tr>
+          <tr>
+            <td><label for="fname">Prénom</label></td>
+            <td>
+              <input type="text" id="fname" name="fname" />
+            </td>
+
+            <td >
+            
+              <p style="color: red" id="prenomEr""></p>
+            
+            </td>
+          </tr>
+          <tr>
+            <td><label for="add">ville</label></td>
+            <td>
+                <select name="ville">
+                    <option value="ba">Ben Arous</option>
+                    <option value="ar">Ariana</option>
+                    <option value="tu">Tunis</option>
+                </select>
+            </td>
+            <td >
+            
+              <p style="color: red" id="adressEr""></p>
+            
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">Numéro Téléphone <span>*</span></label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                
+              />
+            </td>
+            <td >
+            
+              <p style="color: red" id="phoneEr""></p>
+            
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">date de naissance</label></td>
+            <td>
+              <input type="date" id="date" name="date" />
+            </td>
+            
+          </tr>
+          <tr>
+            <td>
+                <label for="email">Email<span>*</span></label>
+            </td>
+            <td>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pass">Mot de passe <span>*</span></label>
+            </td>
+            <td>
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+               
+              />
+            </td>
+            
+              <p style="color: red" id="passEr""></p>
+            
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="cpass">Confirmation mot de passe  <span>*</span></label>
+            </td>
+            <td>
+              <input
+                type="password"
+                name="cpass"
+                placeholder="Confirmer votre mot de passe"
+                id="cpass"
+                
+              />
+            </td>
+            <td >
+            
+              <p style="color: red" id="cPassEr""></p>
+            
+            </td>
+          </tr>
+
+          <tr>
+            <td> <label for="id">Plus des questions?</label></td>
+            <td> <input type="text" id="plus des questions" name="" size="10">
+    
+            </td>
+          </tr>
+
+
+          <tr>
+            <td></td>
+            <td>
+              <button type="submit" value="Submit" onclick="passValidation()" >Submit</button>
+              <button type="reset" value="Reset">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+
+      <p style="color: red" id="erreur""></p>
+    </section>
+
+    <br />
+    <hr />
+    <br />
+    <script src="formulairevalidation.js"></script>
+    
+</body>
+</html>
+  

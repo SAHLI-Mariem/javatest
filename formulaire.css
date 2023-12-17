@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+     background-color: lightblue;
+ }
+ h1 {
+    text-shadow: 2px 2px 5px burlywood;
+   color:beige;
+ }
+
+        form {
+     background-color: lightblue;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 3 3 10px rgba(0, 0, 0, 0.1);
+        }
+        input,
+        select {
+           background-color: lightblue;
+
+            width: 80%;
+            padding: 11px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 5px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            text-decoration:wavy;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:beige;
+        }
+        
+        
+        a:hover {
+            text-decoration: underline;}
